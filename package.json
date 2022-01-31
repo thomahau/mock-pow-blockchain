@@ -1,0 +1,23 @@
+{
+  "name": "mock-pow-blockchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel chainNode1 chainNode2 chainNode3",
+    "chainNode1": "node chainNode.js 3001 http://localhost:3001",
+    "chainNode2": "node chainNode.js 3002 http://localhost:3002",
+    "chainNode3": "node chainNode.js 3003 http://localhost:3003"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "elliptic": "^6.5.4",
+    "express": "^4.17.2",
+    "node-fetch": "^2.6.7",
+    "npm-run-all": "^4.1.5"
+  }
+}
